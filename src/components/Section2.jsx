@@ -5,30 +5,36 @@ const Section2 = () => {
     <section id="section2" className="section">
       <div className="container">
         <div className="header">
-          <span className="brand">RASA NUSANTARA</span>
+          <span className="brand">MENGENAL KEDAI 1866</span>
         </div>
         <div className="content">
-          <h1 className="title">Kenali karakter secangkir Liberika</h1>
+          <h1 className="title">Mengenal Kopi Meranti</h1>
           
           <div className="tags">
-            <button className="tag-btn">Buah nangka</button>
-            <button className="tag-btn">Kayu</button>
+            <button className="tag-btn">Earthy</button>
+            <button className="tag-btn">Woody</button>
+            <button className="tag-btn">Fruity</button>
           </div>
           
           <div className="text-content">
             <p>
-              Kopi Liberika memiliki profil rasa yang kompleks dengan aroma yang 
-              mengingatkan pada buah nangka, asam yang rendah, dan body yang tebal. 
-              Cita rasanya dipengaruhi oleh tanah vulkanik dan iklim tropis Indonesia.
+              Kedai 1866 hadir dengan spesialisasi kopi Liberika khas Kepulauan Meranti, Riau. 
+              Kopi Liberika tumbuh di tanah gambut yang unik, menciptakan karakter rasa 
+              yang tidak bisa ditemukan pada varietas Arabika atau Robusta.
+            </p>
+            <p>
+              Setiap cangkir Kopi 1866 adalah perjalanan rasa - dari aroma yang kuat 
+              hingga body yang tebal, menghadirkan pengalaman otentik yang kaya karakter.
             </p>
           </div>
           
           <div className="dark-section">
-            <h2>Liberika dari tanah Riau</h2>
+            <h2>Komitmen Kami</h2>
             <p>
-              Ditanam di tanah gambut dan mineral yang kaya, kopi Liberika Riau 
-              menghasilkan kualitas terbaik dengan rasa yang khas dan tidak bisa 
-              ditemukan di varietas kopi lainnya.
+              Kami percaya setiap cangkir kopi memiliki cerita. Di Kedai 1866, 
+              kami berkomitmen untuk menghadirkan kopi Liberika berkualitas terbaik 
+              dari petani lokal, mendukung ekonomi daerah, dan melestarikan warisan 
+              kopi Nusantara.
             </p>
           </div>
         </div>

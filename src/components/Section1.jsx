@@ -1,27 +1,24 @@
 import React from 'react';
-import liberikaImg from '../assets/liberika.jpg';
+import logo from '../assets/logo.png';
 
 const Section1 = () => {
   return (
     <section id="section1" className="section">
       <div className="container">
         <div className="header">
-          <span className="brand">RASA NUSANTARA</span>
+          <img src={logo} alt="Kedai 1866 Logo" className="logo-img" />
         </div>
         <div className="content">
-          <h1 className="title">KOPI LIBERIKA</h1>
-          <p className="subtitle">Aroma khas, rasa yang berkarakter.</p>
-          
-          <div className="illustration">
-            <img src={liberikaImg} alt="Kopi Liberika" className="product-img" />
-          </div>
+          <h1 className="title">KEDAI 1866</h1>
+          <p className="subtitle">Kopi & Kuliner</p>
           
           <div className="text-content">
-            <h2>Apa itu kopi Liberika?</h2>
+            <h2>Local Coffee, Local Story</h2>
             <p>
-              Kopi Liberika adalah varietas kopi yang berasal dari Afrika Barat namun 
-              tumbuh subur di Indonesia, khususnya di Provinsi Riau. Kopi ini memiliki 
-              karakteristik unik yang membedakannya dari varietas Arabika dan Robusta.
+              Menghadirkan cita rasa kopi Liberika asli Kepulauan Meranti, Riau. 
+              Tumbuh di tanah gambut, dengan aroma yang kuat, body yang tebal, 
+              serta karakter earthy, woody, dan sedikit fruity. Hangat, otentik, 
+              dan kaya karakter dalam setiap cangkir.
             </p>
           </div>
         </div>

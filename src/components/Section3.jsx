@@ -1,46 +1,58 @@
 import React from 'react';
-import liberika2Img from '../assets/liberika2.jpg';
+import produk1 from '../assets/produk1.jpg';
+import produk2 from '../assets/produk2.jpg';
+import produk3 from '../assets/produk3.jpg';
+import produk4 from '../assets/produk4.jpg';
 
 const Section3 = () => {
+  const menuItems = [
+    {
+      name: 'Chai Latte Panas',
+      price: 'Rp13.000',
+      image: produk1,
+      desc: 'Teh rempah hangat dengan susu segar'
+    },
+    {
+      name: 'Kopi O Liberika',
+      price: 'Rp12.000',
+      image: produk2,
+      desc: 'Kopi hitam murni dari biji Liberika'
+    },
+    {
+      name: 'Kopi Susu Liberika',
+      price: 'Rp14.000',
+      image: produk3,
+      desc: 'Kopi Liberika dengan susu segar'
+    },
+    {
+      name: 'Signature Affogato Liberika',
+      price: 'Rp19.000',
+      image: produk4,
+      desc: 'Es krim dengan espresso Liberika panas'
+    }
+  ];
+
   return (
     <section id="section3" className="section">
       <div className="container">
         <div className="header">
-          <span className="brand">RASA NUSANTARA</span>
+          <span className="brand">MENU KAMI</span>
         </div>
         <div className="content">
-          <h1 className="title">Kenali produk ini</h1>
+          <h1 className="title">Menu Kopi Liberika</h1>
+          <p className="subtitle">100% Kopi Liberika - Tanpa Arabika, Tanpa Robusta</p>
           
-          <div className="product-image">
-            <img src={liberika2Img} alt="Kopi Liberika Meranti" className="product-img" />
-          </div>
-          
-          <div className="product-info">
-            <h2>Kopi Liberika Meranti</h2>
-            <p className="product-desc">Bubuk kopi • Sangrai medium • Kemasan 100 g</p>
-          </div>
-          
-          <div className="product-table">
-            <div className="table-row">
-              <span className="label">Asal</span>
-              <span className="value">Riau, Indonesia</span>
-            </div>
-            <div className="table-row">
-              <span className="label">Jenis</span>
-              <span className="value">Liberika</span>
-            </div>
-            <div className="table-row">
-              <span className="label">Berat bersih</span>
-              <span className="value">100 g</span>
-            </div>
-            <div className="table-row">
-              <span className="label">Bentuk</span>
-              <span className="value">Bubuk</span>
-            </div>
-            <div className="table-row">
-              <span className="label">Tingkat sangrai</span>
-              <span className="value">Medium</span>
-            </div>
+          <div className="menu-container">
+            {menuItems.map((item, index) => (
+              <div key={index} className="menu-item">
+                <img src={item.image} alt={item.name} className="menu-img" />
+                <div className="menu-info">
+                  <h3 className="menu-name">{item.name}</h3>
+                  <p className="menu-desc">{item.desc}</p>
+                  <span className="menu-price">{item.price}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
