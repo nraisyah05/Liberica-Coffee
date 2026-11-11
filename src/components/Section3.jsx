@@ -7,10 +7,10 @@ import produk4 from '../assets/produk4.jpg';
 const Section3 = () => {
   const menuItems = [
     {
-      name: 'Chai Latte Panas',
-      price: 'Rp13.000',
+      name: 'Kopi Susu',
+      price: 'Rp14.000',
       image: produk1,
-      desc: 'Teh rempah hangat dengan susu segar'
+      desc: 'Kopi Liberika dengan susu segar'
     },
     {
       name: 'Kopi O Liberika',
@@ -19,10 +19,10 @@ const Section3 = () => {
       desc: 'Kopi hitam murni dari biji Liberika'
     },
     {
-      name: 'Kopi Susu Liberika',
-      price: 'Rp14.000',
+      name: 'Kopi Susu Aren Liberika',
+      price: 'Rp16.000',
       image: produk3,
-      desc: 'Kopi Liberika dengan susu segar'
+      desc: 'Kopi Liberika dengan gula aren asli'
     },
     {
       name: 'Signature Affogato Liberika',
