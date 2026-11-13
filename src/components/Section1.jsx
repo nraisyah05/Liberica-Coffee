@@ -16,9 +16,16 @@ const Section1 = () => {
             <h2>Local Coffee, Local Story</h2>
             <p>
               Menghadirkan cita rasa kopi Liberika asli Kepulauan Meranti, Riau. 
-              Tumbuh di tanah gambut, dengan aroma yang kuat, body yang tebal, 
+              Tumbuh di tanah gambut yang kaya mineral, dengan aroma yang kuat, body yang tebal, 
               serta karakter earthy, woody, dan sedikit fruity. Hangat, otentik, 
               dan kaya karakter dalam setiap cangkir.
+            </p>
+            <p>
+              Setiap biji kopi yang kami sajikan telah melalui proses seleksi ketat dari petani lokal, 
+              kemudian disangrai dengan presisi untuk mengeluarkan karakter terbaik. 
+              Tanah gambut unik Meranti menciptakan profil rasa yang kompleks dan berbeda 
+              dari varietas kopi lainnya - sebuah warisan Nusantara yang kami lestarikan 
+              melalui setiap cangkir.
             </p>
           </div>
         </div>
