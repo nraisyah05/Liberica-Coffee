@@ -1,4 +1,3 @@
-import React from 'react';
 import produk1 from '../assets/produk1.jpg';
 import produk2 from '../assets/produk2.jpg';
 import produk3 from '../assets/produk3.jpg';
@@ -20,7 +19,7 @@ const Section3 = () => {
     },
     {
       name: 'Kopi Susu Aren Liberika',
-      price: 'Rp16.000',
+      price: 'Rp17.000',
       image: produk3,
       desc: 'Kopi Liberika dengan gula aren asli'
     },
@@ -33,29 +32,23 @@ const Section3 = () => {
   ];
 
   return (
-    <section id="section3" className="section">
-      <div className="container">
-        <div className="header">
-          <span className="brand">MENU KAMI</span>
-        </div>
-        <div className="content">
-          <h1 className="title">Menu Kopi Liberika</h1>
-          <p className="subtitle">100% Kopi Liberika - Tanpa Arabika, Tanpa Robusta</p>
+    <section id="section3" className="section menu-section" aria-labelledby="menu-title">
+          <p className="eyebrow">05 / MENU KEDAI</p>
+          <h2 id="menu-title">Menu Kedai 1866</h2>
+          <p className="menu-subtitle">Seluruh minuman kopi kami dibuat menggunakan 100% kopi Liberika, tanpa campuran Arabika atau Robusta.</p>
           
           <div className="menu-container">
             {menuItems.map((item, index) => (
-              <div key={index} className="menu-item">
-                <img src={item.image} alt={item.name} className="menu-img" />
+              <article key={index} className="menu-item">
+                <img src={item.image} alt={item.name} className="menu-img" loading="lazy" decoding="async" />
                 <div className="menu-info">
                   <h3 className="menu-name">{item.name}</h3>
                   <p className="menu-desc">{item.desc}</p>
                   <span className="menu-price">{item.price}</span>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
-        </div>
-      </div>
     </section>
   );
 };
