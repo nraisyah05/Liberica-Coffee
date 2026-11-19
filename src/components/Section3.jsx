@@ -32,14 +32,14 @@ const Section3 = () => {
   ];
 
   return (
-    <section id="section3" className="section menu-section" aria-labelledby="menu-title">
-          <p className="eyebrow">05 / MENU KEDAI</p>
-          <h2 id="menu-title">Menu Kedai 1866</h2>
-          <p className="menu-subtitle">Seluruh minuman kopi kami dibuat menggunakan 100% kopi Liberika, tanpa campuran Arabika atau Robusta.</p>
+    <section id="section3" className="section section-focus menu-section" aria-labelledby="menu-title">
+          <p className="eyebrow" data-reveal>05 / MENU KEDAI</p>
+          <h2 id="menu-title" data-reveal>Menu Kedai 1866</h2>
+          <p className="menu-subtitle" data-reveal>Seluruh minuman kopi kami dibuat menggunakan 100% kopi Liberika, tanpa campuran Arabika atau Robusta.</p>
           
-          <div className="menu-container">
+          <div className="menu-container" data-reveal-group>
             {menuItems.map((item, index) => (
-              <article key={index} className="menu-item">
+              <article key={index} className="menu-item" data-reveal>
                 <img src={item.image} alt={item.name} className="menu-img" loading="lazy" decoding="async" />
                 <div className="menu-info">
                   <h3 className="menu-name">{item.name}</h3>

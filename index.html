@@ -5,6 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <meta name="theme-color" content="#F5F0E8" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="/src/App.css" />
+    <noscript>
+      <style>
+        @media (width < 1024px) {
+          html:root { --header-height: 0px; }
+          header.site-header { position: static; }
+          .site-header .nav-toggle { display: none; }
+          .site-header .site-nav:not(.is-open) {
+            position: static;
+            max-block-size: none;
+            overflow: visible;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+            interactivity: auto;
+          }
+          .site-header .header-inner { display: block; }
+        }
+      </style>
+    </noscript>
     <meta name="description" content="Kopi-1866 - Kopi & Kuliner. Menghadirkan cita rasa kopi Liberika asli Kepulauan Meranti, Riau." />
     <meta name="keywords" content="Kopi Liberika, Kedai 1866, Kopi Meranti, Kopi Riau, Kopi Lokal" />
     <meta name="author" content="Kedai 1866" />

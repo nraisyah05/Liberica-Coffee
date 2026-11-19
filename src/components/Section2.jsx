@@ -27,19 +27,19 @@ function FeatureIcon({ type }) {
 
 const Section2 = () => (
   <>
-    <section id="section2" className="section character" aria-labelledby="character-title">
-      <p className="eyebrow">02 / KARAKTER RASA</p>
-      <h2 id="character-title">Kenali karakter<br className="mobile-break" /> secangkir Liberika</h2>
-      <ul className="flavor-tags" aria-label="Karakter rasa">
-        <li>Buah tropis</li><li>Kayu</li><li>Cokelat</li>
+    <section id="section2" className="section section-focus character" aria-labelledby="character-title">
+      <p className="eyebrow" data-reveal>02 / KARAKTER RASA</p>
+      <h2 id="character-title" data-reveal>Kenali karakter<br className="mobile-break" /> secangkir Liberika</h2>
+      <ul className="flavor-tags" aria-label="Karakter rasa" data-reveal-group>
+        <li data-reveal>Buah tropis</li><li data-reveal>Kayu</li><li data-reveal>Cokelat</li>
       </ul>
-      <p>Aroma dan rasa dapat bervariasi menurut asal kebun, proses pascapanen, tingkat sangrai, dan cara penyeduhan. Beberapa Liberika memiliki nuansa buah tropis seperti nangka, aroma kayu, dan body yang tebal.</p>
-      <p className="taste-note">Catatan: deskripsi rasa merupakan gambaran umum, bukan jaminan profil setiap produk.</p>
+      <p data-reveal>Aroma dan rasa dapat bervariasi menurut asal kebun, proses pascapanen, tingkat sangrai, dan cara penyeduhan. Beberapa Liberika memiliki nuansa buah tropis seperti nangka, aroma kayu, dan body yang tebal.</p>
+      <p className="taste-note" data-reveal>Catatan: deskripsi rasa merupakan gambaran umum, bukan jaminan profil setiap produk.</p>
       <div className="coffee-differences" aria-labelledby="differences-title">
-        <h3 id="differences-title" className="information-heading">Perbedaan dengan Arabica dan Robusta</h3>
-        <div className="variety-list">
+        <h3 id="differences-title" className="information-heading" data-reveal>Perbedaan dengan Arabica dan Robusta</h3>
+        <div className="variety-list" data-reveal-group>
           {coffeeTypes.map(coffee => (
-            <article className={`variety-card${coffee.featured ? ' variety-card-featured' : ''}`} key={coffee.name}>
+            <article className={`variety-card${coffee.featured ? ' variety-card-featured' : ''}`} key={coffee.name} data-reveal>
               <div className="variety-heading"><h4>{coffee.name}</h4><span>{coffee.habitat}</span></div>
               <p>{coffee.description}</p>
             </article>
@@ -47,10 +47,10 @@ const Section2 = () => (
         </div>
       </div>
       <div className="coffee-features" aria-labelledby="features-title">
-        <h3 id="features-title" className="information-heading">Ciri Khas Kopi Liberika</h3>
-        <div className="coffee-features-grid">
+        <h3 id="features-title" className="information-heading" data-reveal>Ciri Khas Kopi Liberika</h3>
+        <div className="coffee-features-grid" data-reveal-group>
           {features.map(feature => (
-            <article className="coffee-feature" key={feature.title}>
+            <article className="coffee-feature" key={feature.title} data-reveal>
               <span className="coffee-feature-icon"><FeatureIcon type={feature.icon} /></span>
               <h4>{feature.title}</h4>
               <p>{feature.description}</p>
@@ -60,9 +60,9 @@ const Section2 = () => (
       </div>
     </section>
     <section id="asal" className="section panel green-panel origin" aria-labelledby="origin-title">
-      <p className="eyebrow">03 / JEJAK DAERAH</p>
-      <h2 id="origin-title">Liberika dari tanah Riau</h2>
-      <p>Kabupaten Kepulauan Meranti dikenal dengan kopi Liberika yang tumbuh di kawasan lahan gambut dataran rendah. Lingkungan tumbuh ini menjadi bagian dari cerita dan identitas kopi lokal.</p>
+      <p className="eyebrow" data-reveal>03 / JEJAK DAERAH</p>
+      <h2 id="origin-title" data-reveal>Liberika dari tanah Riau</h2>
+      <p data-reveal>Kabupaten Kepulauan Meranti dikenal dengan kopi Liberika yang tumbuh di kawasan lahan gambut dataran rendah. Lingkungan tumbuh ini menjadi bagian dari cerita dan identitas kopi lokal.</p>
     </section>
   </>
 )

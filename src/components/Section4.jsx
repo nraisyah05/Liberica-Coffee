@@ -7,23 +7,23 @@ const questions = [
 const Section4 = () => (
   <>
     <section id="section4" className="section panel faq" aria-labelledby="faq-title">
-      <p className="eyebrow">08 / TANYA JAWAB</p>
-      <h2 id="faq-title">Pertanyaan yang sering muncul</h2>
-      <div className="faq-list">
+      <p className="eyebrow" data-reveal>08 / TANYA JAWAB</p>
+      <h2 id="faq-title" data-reveal>Pertanyaan yang sering muncul</h2>
+      <div className="faq-list" data-reveal-group>
         {questions.map(([question, answer]) => (
-          <article className="faq-item" key={question}><h3>{question}</h3><p>{answer}</p></article>
+          <article className="faq-item" key={question} data-reveal><h3>{question}</h3><p>{answer}</p></article>
         ))}
       </div>
     </section>
-    <footer id="kontak" className="section panel site-footer">
+    <footer id="kontak" className="section section-focus panel site-footer">
       <div className="footer-layout">
         <div className="footer-top">
-          <div className="footer-copy">
+          <div className="footer-copy" data-reveal>
             <p className="eyebrow">SECANGKIR CERITA DARI RIAU</p>
             <h2>Kenali. Nikmati. Dukung kopi lokal.</h2>
           </div>
-          <div className="footer-contact-stack">
-            <div className="footer-address-row">
+          <div className="footer-contact-stack" data-reveal-group>
+            <div className="footer-address-row" data-reveal>
             <a className="footer-icon-link" href="https://www.instagram.com/kedai.1866?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram Kedai 1866 (@kedai.1866)" title="Instagram @kedai.1866">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5" />
@@ -36,7 +36,7 @@ const Section4 = () => (
                 <a className="footer-instagram-handle" href="https://www.instagram.com/kedai.1866?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@kedai.1866</a>
               </div>
             </div>
-            <div className="footer-address-row">
+            <div className="footer-address-row" data-reveal>
               <a className="footer-icon-link" href="https://share.google/jzuQrcdnslIYMBZzX" target="_blank" rel="noopener noreferrer" aria-label="Lokasi Kedai 1866 di Google Maps" title="Buka lokasi di Google Maps">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                   <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
@@ -50,7 +50,7 @@ const Section4 = () => (
             </div>
           </div>
         </div>
-        <div className="location-map">
+        <div className="location-map" data-reveal>
           <iframe title="Peta lokasi Kedai 1866, Jalan Marsan Sejahtera, Pekanbaru" src="https://maps.google.com/maps?q=Kedai%201866&output=embed&hl=id" width="1200" height="220" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
         </div>
       </div>
