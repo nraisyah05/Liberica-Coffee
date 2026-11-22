@@ -1,13 +1,11 @@
-import prepareIllustration from '../assets/illustrations/brew-prepare.svg'
-import pourIllustration from '../assets/illustrations/brew-pour.svg'
-import enjoyIllustration from '../assets/illustrations/brew-enjoy.svg'
-
-const illustrations = [prepareIllustration, pourIllustration, enjoyIllustration]
-
 const steps = [
-  ['Siapkan', 'Gunakan kopi yang sudah digiling sesuai alat seduh.'],
-  ['Tuang air', 'Gunakan air panas dan tuang secara perlahan.'],
-  ['Nikmati', 'Sesuaikan takaran dan waktu seduh dengan selera.'],
+  ['Cara mudah seduh kopi Liberika', 'Ikuti langkah sederhana berikut untuk menikmati kopi Liberika.'],
+  ['Siapkan takaran yang pas', 'Gunakan kopi Liberika dan takaran yang sesuai dengan alat seduh.'],
+  ['Perhatikan suhu air', 'Panaskan air, lalu tunggu sebentar agar suhunya sesuai untuk menyeduh.'],
+  ['Basahi bubuk kopi', 'Tuangkan sedikit air panas secara merata untuk membasahi bubuk kopi.'],
+  ['Tuangkan sisa air panas', 'Tambahkan air secara perlahan hingga mencapai takaran yang diinginkan.'],
+  ['Tunggu hingga siap', 'Biarkan kopi terekstraksi selama beberapa menit.'],
+  ['Selamat menikmati', 'Sajikan kopi Liberika dan nikmati karakter rasanya.'],
 ]
 
 export default function Serving() {
@@ -22,7 +20,7 @@ export default function Serving() {
             <li className="step" key={title} data-reveal>
               <div className="step-visual">
                 <span className="step-number" aria-hidden="true">0{i + 1}</span>
-                <img src={illustrations[i]} alt="" width="320" height="200" loading="lazy" decoding="async" />
+                <img src={`/tahap${i + 1}.png`} alt={`Tahap ${i + 1}: ${title}`} width="640" height="640" loading="lazy" decoding="async" />
               </div>
               <div className="step-copy"><h3>{title}</h3><p>{text}</p></div>
             </li>
