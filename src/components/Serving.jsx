@@ -27,12 +27,6 @@ export default function Serving() {
           ))}
         </ol>
       </section>
-      <section id="informasi" className="section panel green-panel trust" aria-labelledby="trust-title">
-        <p className="eyebrow" data-reveal>07 / INFORMASI &amp; KEPERCAYAAN</p>
-        <h2 id="trust-title" data-reveal>Cerita produk yang bisa ditelusuri</h2>
-        <p data-reveal>Informasi ini membantu pembeli mengenal produk, asal kopi, karakter rasa, serta detail kemasan sebelum membeli.</p>
-        <p className="trust-note" data-reveal>Lengkapi dengan nama petani / kelompok tani, alamat kebun, metode pengolahan, tanggal sangrai, nomor izin edar (bila ada), dan kontak produsen.</p>
-      </section>
     </>
   )
 }

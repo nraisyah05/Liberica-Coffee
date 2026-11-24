@@ -6,8 +6,8 @@ const questions = [
 
 const Section4 = () => (
   <>
-    <section id="section4" className="section panel faq" aria-labelledby="faq-title">
-      <p className="eyebrow" data-reveal>08 / TANYA JAWAB</p>
+    <section id="section4" className="section panel green-panel faq" aria-labelledby="faq-title">
+      <p className="eyebrow" data-reveal>07 / TANYA JAWAB</p>
       <h2 id="faq-title" data-reveal>Pertanyaan yang sering muncul</h2>
       <div className="faq-list" data-reveal-group>
         {questions.map(([question, answer]) => (

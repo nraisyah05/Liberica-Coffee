@@ -118,6 +118,9 @@ body { background: var(--page); color: var(--ink); font-size: 16px; line-height:
 .green-panel { background: var(--green); }
 .green-panel h2, .green-panel p { color: #f1f0df; }
 .green-panel .eyebrow { color: #d3d9bf; }
+.faq.green-panel h2 { color: #f1f0df; }
+.faq.green-panel > .eyebrow { color: #f1f0df; }
+.faq.green-panel .faq-item h3, .faq.green-panel .faq-item p { color: #111; }
 .origin h2 { max-width: 630px; }
 .origin > p:not(.eyebrow) { max-width: 720px; }
 .product h2 { margin-bottom: 32px; }
